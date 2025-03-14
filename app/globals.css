@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "tailwindcss";
+@plugin "daisyui";
 
 @plugin "tailwindcss-animate";
 
@@ -117,6 +119,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
