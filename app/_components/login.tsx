@@ -10,7 +10,7 @@ export default function Login() {
         });
       }}
     >
-      <button type="submit" className="btn btn-link">
+      <button type="submit" className="btn btn-ghost">
         Dashboard
       </button>
     </form>

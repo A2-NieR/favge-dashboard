@@ -17,7 +17,12 @@ export default async function Navbar() {
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Login />
+            {session && (
+              <Link href="/dashboard" className="btn btn-ghost">
+                Dashboard
+              </Link>
+            )}
+            {!session && <Login />}
           </li>
         </ul>
         {session?.user?.image && (
